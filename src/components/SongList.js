@@ -1,19 +1,19 @@
 import React, { useContext } from "react"
 import { SongContext } from "../context/SongContext"
 import SongDetails from "./SongDetails"
+import DropdownSort from "./DropdownSort"
 
-const SongList = (song) => {
+
+const SongList = () => {
     const { songs } = useContext(SongContext)
-    const { dispatch } = useContext(SongContext)
 
     return songs.length ? (
+
         <div
             className="song-list"
         >
-            <button
-                onClick={() => dispatch({ type: "SORT_ARTIST", title: song.title })}
 
-            >Sort artist</button>
+            <DropdownSort />
             <ul>
                 {songs.map(song => {
                     return (
@@ -25,12 +25,13 @@ const SongList = (song) => {
                 })}
 
             </ul>
+
         </div>
     ) : (
         <div
             className="empty"
         >
-            Geen songs meer in je lijst, het wordt tijd om wat nieuwe songs toe te voegen ;))
+            There are no songs in your playlist anymore, about time to add a few... 🎵 🎧 😊
         </div>
     )
 }

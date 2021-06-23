@@ -45,7 +45,7 @@ function NewSongForm() {
                 <option
                     value=""
                     id="1"
-                >Kies uw genre</option>
+                >Genre...</option>
                 <option
                     value="pop"
                     id="2"
@@ -85,36 +85,32 @@ function NewSongForm() {
                     id="1"
                 >Rating...</option>
                 <option
-                    value="one"
+                    value="1"
                     id="2"
                 >1</option>
                 <option
-                    value="two"
+                    value="2"
                     id="3"
                 >2</option>
                 <option
-                    value="three"
+                    value="3"
                     id="4"
                 >3</option>
                 <option
-                    value="four"
+                    value="4"
                     id="5"
                 >4</option>
                 <option
-                    value="five"
+                    value="5"
                     id="6"
                 >5</option>
             </select>
             <button
                 type="submit"
             >
-                Voeg Nummer Toe
+                Add A Song
             </button>
-            {/* <input
-                className="add-button"
-                type="submit"
-                value="Voeg Nummer Toe"
-            /> */}
+
         </form>
     )
 }

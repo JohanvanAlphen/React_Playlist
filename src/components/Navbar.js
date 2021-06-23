@@ -8,7 +8,7 @@ const Navbar = () => {
             className="navbar"
         >
             <h1>Johan's Lil' Playlist</h1>
-            <p>Momenteel heb je {songs.length} songs in je playlist...</p>
+            <p>At the moment you have {songs.length} songs in your playlist...</p>
         </div>
     );
 }

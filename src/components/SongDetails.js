@@ -4,17 +4,19 @@ import { SongContext } from "../context/SongContext"
 function SongDetails({ song }) {
     const { dispatch } = useContext(SongContext)
     return (
-        <li>
+        <li className="song-details">
             <div
                 className="title"
-            ><p>Titel:</p>
+            ><p>Title:</p>
                 {song.title}
+
             </div>
             <div
                 className="artist"
             >
-                <p>Artiest:</p>
+                <p>Artist:</p>
                 {song.artist}
+
             </div>
             <div
                 className="genre"
@@ -31,7 +33,7 @@ function SongDetails({ song }) {
             <button
                 className="remove-button"
                 onClick={() => dispatch({ type: "REMOVE_SONG", id: song.id })}
-            >Verwijder Song</button>
+            >🗑️</button>
         </li>
     )
 }
